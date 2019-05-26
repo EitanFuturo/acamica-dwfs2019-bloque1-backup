@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|IBM+Plex+Sans:400,600');
+@import url('./normalize.css');
+
+:root {
+  --background-color: #FFFFFF;
+  --secondary-color: #00F3BB;
+  --text-color: #060A24;   
+  --gradient: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  font-size: 16px; 
+}
+
+.logo {
+  fill: var(--background-color);
+}
+
+.menu {
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-container {
+  padding: 10px 1rem 1rem 1rem;  
+}
+
+.menu {
+  padding-right: 3px;
+}
