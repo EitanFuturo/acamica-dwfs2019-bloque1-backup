@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|IBM+Plex+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,400,500|IBM+Plex+Sans:400,600');
 @import url('./normalize.css');
+@import url('./variables.css');
+@import url('./media-queries.css');
 
 :root {
-  --background-color: #FFFFFF;
-  --secondary-color: #00F3BB;
-  --text-color: #060A24;   
-  --gradient: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
   font-size: 16px; 
 }
 
@@ -24,10 +20,69 @@ nav {
   justify-content: space-between;
 }
 
-.big-container {
-  padding: 10px 1rem 1rem 1rem;  
-}
-
 .menu {
   padding-right: 3px;
+}
+
+.menu::before {
+  content: "☰";
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .big-container {
+    padding: 10px 1rem 1rem 1rem; 
+  }
+
+  .logo-container {
+    width: 24px;
+    height: 24px;
+  }
+
+  .sections {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .big-container {
+    padding: 22px 100px 22px 100px;
+  }
+
+  .logo-container {
+    width: 36px;
+    height: 36px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu::before {
+    content: "";
+  }
+
+  .sections {
+    display: flex;
+    justify-content: space-between;    
+    font-family: var(--font-mono);
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.75rem;
+  }
+
+  .sections > li {
+    font-weight: 400;  
+  }
+
+  .sections li:first-child {
+    padding-right: 3rem;
+  }
+
+  .sections li:last-child {
+    padding-left: 3rem;
+  }
+
+  .sections li:nth-child(3) {
+    padding-left: 3rem;
+  }
 }
