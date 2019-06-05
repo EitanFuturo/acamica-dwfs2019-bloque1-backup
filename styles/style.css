@@ -11,16 +11,14 @@
   fill: var(--background-color);
 }
 
-.menu {
-  color: var(--text-color);
-}
-
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .menu {
+  color: var(--text-color);  
   padding-right: 3px;
 }
 
@@ -28,24 +26,67 @@ nav {
   content: "☰";
 }
 
-@media only screen and (max-device-width: 1024px) {
-  .big-container {
-    padding: 10px 1rem 1rem 1rem; 
-  }
+.title {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 2.25rem;
+}
 
-  .logo-container {
-    width: 24px;
-    height: 24px;
-  }
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+}
 
-  .sections {
-    display: none;
-  }
+.main p {
+  font-family: var(--font-mono); 
+  font-size: 0.875rem;
+  line-height: 1.375rem; 
+  padding: 1rem 0 2.25rem;
+}
+
+.big-container {
+  padding: 0 1rem; 
+}
+
+.logo-container {
+  width: 24px;
+  height: 24px;
+}
+
+.sections {
+  display: none;
+}
+
+.menu:hover .sections {
+  display: flex;
+}
+
+.newline-big-screen {
+  display: block;
+}
+
+.newline-small-screen {
+  display: inline;
+}
+
+.suscribe {
+  font-family: var(--font-mono);
+  padding: 13px 0;  
+  text-transform: uppercase;
+  background-color: var(--secondary-color);   
 }
 
 @media only screen and (min-device-width: 1024px) {
+  
+  nav {
+    display: flex;
+    justify-content: space-between; 
+    padding: 22px 0;
+  }
+
   .big-container {
-    padding: 22px 100px 22px 100px;
+    padding: 0 100px;
   }
 
   .logo-container {
@@ -59,6 +100,26 @@ nav {
 
   .menu::before {
     content: "";
+  }
+
+  .main {
+    padding: 7.5rem 6.25rem;
+  }
+
+  .main p {
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 4rem;
+  }
+  .newline-big-screen {
+    display: inline;
+  }
+
+  .newline-small-screen {
+    display: block;
   }
 
   .sections {
@@ -85,4 +146,5 @@ nav {
   .sections li:nth-child(3) {
     padding-left: 3rem;
   }
+
 }
