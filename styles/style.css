@@ -35,7 +35,19 @@ nav {
 .main {
   display: flex;
   flex-direction: column;
-  padding-top: 29px;
+  padding: 29px 0 24px 0;
+}
+
+.polygon {
+  background-image: var(--gradient);
+  height: 805px;
+  clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
+}
+
+.episodes > h2.title {
+  color: var(--background-color);
+  font-family: var(--font-sans);  
+  padding-top: 4rem;
 }
 
 .main p {
@@ -45,8 +57,9 @@ nav {
   padding: 1rem 0 2.25rem;
 }
 
-.big-container {
-  padding: 0 1rem; 
+.side-streets {
+  padding-left: 1rem; 
+  padding-right: 1rem;
 }
 
 .logo-container {
