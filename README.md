@@ -7,3 +7,5 @@
 5. Agregar estilos de CSS el para la vista desktop. ¿Cómo se reemplaza el menú hamburguesa por las secciones? Modificar tamaños de los elementos y espacios entre elementos.
 6. Agregar la sección principal con su título, párrafo y botón de contacto. ¿Cómo resolver las diferencias en los saltos de línea entre las vista mobile y la desktop?
 7. Agregar la sección de episodios ¿Cómo lograr las líneas oblicuas? referencias: https://css-tricks.com/creating-non-rectangular-headers/, https://bennettfeely.com/clippy/. 
+8. Agregar imagen del teléfono. ¿Cómo superponerla a las líneas de la sección anterior? ¿transform: translateY, margin negativo?
+9. Agregar título y párrafos de la sección. ¿Comparten alguna clase con otro texto (color, tamaño, tipografía)? Agregar las clases correspondientes. En la versión mobile los elementos de esta sección se disponer verticalmente y en la desktop de manera horizontal. Resolver esto utilizando flexbox.
