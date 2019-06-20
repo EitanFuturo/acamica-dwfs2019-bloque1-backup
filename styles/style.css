@@ -51,13 +51,38 @@ nav {
   padding: 29px 0 24px 0;
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.25rem;
+}
+
+.news > button {
+  margin-top: 2.25rem;
+}
+
 .polygon {
   background-image: var(--gradient);
   height: 805px;
-  clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
+  clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);  
+  -moz-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
+  -o-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
+  -ms-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);    
+  -webkit-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
 }
 
-.episodes > h2.title {
+.news.polygon {
+  text-align: center;
+  height: auto;  
+  background-image: var(--gradient);
+  clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);  
+  -moz-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);
+  -o-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);
+  -ms-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);    
+  -webkit-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);
+}
+
+h2.white.title {
   color: var(--background-color);
   font-family: var(--font-sans);  
   padding-top: 4rem;
@@ -101,7 +126,7 @@ nav {
 }
 
 .img-container.phone {
-  height: 519px;
+  max-width: 360px;
 }
 
 .origins {
@@ -159,7 +184,6 @@ img {
 
   .img-container.phone {
     width: 457.6px;
-    height: 660px;
   }
 
   img {
@@ -198,14 +222,28 @@ img {
   .polygon {
     height: 949px;
     clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
+    -moz-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
+    -o-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
+    -ms-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);    
+    -webkit-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
   }
   
+  .news.polygon {
+    height: auto;
+    background-image: var(--gradient);
+    clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% 100%, 0 100%);    
+    -moz-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% 100%, 0 100%);
+    -o-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% 100%, 0 100%);
+    -ms-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);    
+    -webkit-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% 100%, 0 100%);
+  }
+
   .episodes {
     padding-top: 12rem;
     padding-left: 12.50rem;
   }
 
-  .episodes > h2.title {
+  h2.white.title {
     padding-top: 0;
     font-size: 3rem;
   }
@@ -286,6 +324,7 @@ img {
   .content > .img-container {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;  
   }
 
   .content > .title {
