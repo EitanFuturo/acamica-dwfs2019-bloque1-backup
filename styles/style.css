@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,400,500|IBM+Plex+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,400,500|IBM+Plex+Sans:400,500,600');
 @import url('./normalize.css');
 @import url('./variables.css');
 @import url('./media-queries.css');
+@import url('./svg.css');
 
 :root {
   font-size: 16px; 
@@ -9,6 +10,10 @@
 
 .logo {
   fill: var(--background-color);
+}
+
+.vertical-translation {
+  transform: translateY(-150px);  
 }
 
 nav {
@@ -62,7 +67,7 @@ nav {
   padding-bottom: 2.25rem;
 }
 
-.side-streets {
+.side-gaps {
   padding-left: 16px; 
   padding-right: 16px;
 }
@@ -102,7 +107,6 @@ nav {
 .origins {
   display: flex;
   flex-direction: column;
-  transform: translateY(-150px);
 }
 
 .origins > .title {
@@ -112,11 +116,38 @@ nav {
 img {
   width: 100%;
   height: 100%;
+  vertical-align: middle;
 }
 
-.text-container > .title {
-  font-size: 2.25rem;
+.guests, .content {
+  padding-top: 3.375rem;
 }
+
+.content > .img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content > .img-container > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3.25rem;
+}
+
+.content > .title {
+  padding-bottom: 2.4rem;
+}
+
+.content-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 13px;
+}
+
+/* ----- MEDIA QUERIES ----- */
 
 @media only screen and (min-device-width: 1024px) {
   
@@ -136,7 +167,7 @@ img {
     height: 100%;
   }
 
-  .side-streets {
+  .side-gaps {
     padding-left: 200px; 
     padding-right: 200px;
   }
@@ -179,10 +210,10 @@ img {
     font-size: 3rem;
   }
   
-
-  .title {
+  h1.title {
     font-size: 4rem;
   }
+  
   .newline-big-screen {
     display: inline;
   }
@@ -236,8 +267,28 @@ img {
     font-size: 1rem;    
   }
 
-  .text-container > .title {
+  .title {
     font-size: 3rem;
   }
 
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .guests > .img-container > img {
+    max-width: 480px;
+    max-height: 364px;
+  }
+
+  .content > .img-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .content > .title {
+    padding-bottom: 4.3rem;
+  }
 }
