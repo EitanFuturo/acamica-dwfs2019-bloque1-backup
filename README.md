@@ -9,3 +9,6 @@
 7. Agregar la sección de episodios ¿Cómo lograr las líneas oblicuas? referencias: https://css-tricks.com/creating-non-rectangular-headers/, https://bennettfeely.com/clippy/. 
 8. Agregar imagen del teléfono. ¿Cómo superponerla a las líneas de la sección anterior? ¿transform: translateY, margin negativo?
 9. Agregar título y párrafos de la sección. ¿Comparten alguna clase con otro texto (color, tamaño, tipografía)? Agregar las clases correspondientes. En la versión mobile los elementos de esta sección se disponer verticalmente y en la desktop de manera horizontal. Resolver esto utilizando flexbox.
+10. Agregar la sección invitados. Como en secciones anteriores, las fotos se disponen vertical y horizontalmente según el tamaño del viewport. ¿Qué propiedad de flexbox permite que las imágenes se dispongan horizontalmente en diferentes líneas según el tamaño del contenedor?
+11. La sección "Algunos de nuestros temas" tiene imágenes de modo similar a la anterior pero en formato svg en vez de png. Los svg pueden ser agregados al html o por css, entre otros métodos. ¿Cuál te parece el mejor para este caso?
+12. La sección de novedades comparte reglas de estilo con otras secciones. ¿Qué clases podés reutilizar para lograr esto? 
