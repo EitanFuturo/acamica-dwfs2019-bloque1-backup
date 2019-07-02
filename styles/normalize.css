@@ -4,4 +4,9 @@
 	border: 0;
   font-size: 100%;
   list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
 }

@@ -30,26 +30,26 @@
         </g>
     </svg>
     <ul class="sections">
-      <li>Episodios</li>
-      <li>Nosotros</li>
-      <li>Entrevistas</li>
-      <li>Tópicos</li>
+      <li><a href="#episodes">Episodios</a></li>
+      <li><a href="#origins">Nosotros</a></li>
+      <li><a href="#guests">Entrevistas</a></li>
+      <li><a href="#content">Tópicos</a></li>
     </ul>
     <span class="menu"></span>
   </nav>
   <section class="main side-gaps">
     <h1 class="title">Hello <del>world</del> <span class="newline-big-screen">pale blue dot.</span></h1>
     <p class="text">Un podcast que explora el mundo de la programación. <span class="newline-small-screen">Nuevos episodios, todos los jueves cada 15 días.</span></p>
-    <button class="suscribe">suscribirse</button>
+    <a href="#origins" class="suscribe">conocé más</a>
   </section>
   <section class="polygon">
-    <div class="episodes side-gaps">
+    <div id="episodes" class="episodes side-gaps">
       <h2 class="white title">Episodios</h2>
       <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/4ec84c1f-b2d0-431f-9b0d-bea208060ce7?dark=false"></iframe>
     </div>
   </section>
   <div class="vertical-translation">
-    <section class="origins">
+    <section id="origins" class="origins">
       <div class="img-container phone">
         <img src="./assets/phone.png" alt="Teléfono móvil con una noticia sobre tecnología en la pantalla.">
       </div>
@@ -59,7 +59,7 @@
         <p class="text">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
       </div> 
     </section>
-    <section class="guests">
+    <section id="guests" class="guests">
       <h2 class="title side-gaps">Invitadas/os <span class="newline-big-screen">estelares</span></h2>
       <div class="img-container women-in-tech">
         <img src="./assets/grace-hopper.png" alt="Retrato de Grace Hopper con una computadora antigua.">
@@ -70,7 +70,7 @@
         <img src="./assets/susan-kare.png" alt="Retrato de Grace Hoper con una computadora antigua.">            
       </div>                
     </section>
-    <section class="content side-gaps">
+    <section id="content" class="content side-gaps">
       <h2 class="title">Algunos de <span class="newline-big-screen">nuestros temas</span></h2>
       <div class="img-container">
         <div class="container">
@@ -94,9 +94,19 @@
     <section class="news polygon">
       <div class="news side-gaps">
         <h2 class="white title side-gaps">¿Querés las últimas novedades?</h2>
-        <button class="suscribe">suscribirse</button>
+        <a href="#episodes" class="suscribe">escuchá los episodios</a>
       </div>
     </section>
   </div>
+  <footer class="vertical-translation">
+    <h4>© 2019— Hello blue pale dot</h4>
+    <ul class="social-media">
+      <li><a href="#"><i class="fab fa-spotify"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-telegram"></i></a></li>      
+    </ul>
+  </footer>
 </body>
 </html>
