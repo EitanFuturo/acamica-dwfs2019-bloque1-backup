@@ -1,0 +1,4 @@
+div.artwork[title~=data]{
+  visibility: hidden;
+}
+

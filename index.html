@@ -10,7 +10,7 @@
   <title>Pale blue dot</title>
 </head>
 <body>
-  <nav class="side-gaps">
+  <nav>
     <svg class="logo-container" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Landing-podcast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="UI-Kit_draft" transform="translate(-537.000000, -1375.000000)">
@@ -29,13 +29,17 @@
             </g>
         </g>
     </svg>
-    <ul class="sections">
-      <li><a href="#episodes">Episodios</a></li>
-      <li><a href="#origins">Nosotros</a></li>
-      <li><a href="#guests">Entrevistas</a></li>
-      <li><a href="#content">Tópicos</a></li>
-    </ul>
-    <span class="menu"></span>
+    <div class="menu-container">
+      <label for="toggle" class="menu"></label>
+      <input type="checkbox" id="toggle"/>
+      <ul class="sections">
+        <li><a href="#episodes">Episodios</a></li>
+        <li><a href="#origins">Nosotros</a></li>
+        <li><a href="#guests">Entrevistas</a></li>
+        <li><a href="#content">Tópicos</a></li>
+      </ul>
+    </div>
+   
   </nav>
   <section class="main side-gaps">
     <h1 class="title">Hello <del>world</del> <span class="newline-big-screen">pale blue dot.</span></h1>

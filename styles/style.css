@@ -3,6 +3,7 @@
 @import url('./variables.css');
 @import url('./media-queries.css');
 @import url('./svg.css');
+@import url('./player.css');
 
 :root {
   font-size: 16px; 
@@ -23,12 +24,13 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px 16px;
 }
 
 .menu {
   color: var(--text-color);  
   padding-right: 3px;
+  align-self: flex-end;
 }
 
 .menu::before {
@@ -108,12 +110,36 @@ h2.white.title {
   height: 24px;
 }
 
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .sections {
+  display: none;
+  text-align: center;
+  background-color: var(--secondary-color);
+  text-transform: uppercase;  
+  font-family: var(--font-mono);  
+  font-size: 14px;
+  margin-top: 1rem;    
+}
+
+#toggle {
   display: none;
 }
 
-.menu:hover .sections {
-  display: flex;
+.sections li {
+  padding: 1rem;
+  line-height: 1rem;
+}
+
+.sections li:nth-child(odd), .sections li:nth-child(2){
+  border-bottom: 1px solid var(--text-color);  
+}
+
+#toggle:checked + .sections {
+  display: block;
 }
 
 .newline-big-screen {
@@ -208,7 +234,7 @@ footer > h4 {
   nav {
     display: flex;
     justify-content: space-between; 
-    padding: 22px 0;
+    padding: 22px 100px;
   }
 
   .img-container.phone {
@@ -307,10 +333,13 @@ footer > h4 {
     font-weight: 100;
     text-transform: uppercase;
     line-height: 1.75rem;
+    background-color: var(--background-color);
   }
 
   .sections > li {
     font-weight: 400;  
+    border-bottom: none !important;
+    font-size: 100%
   }
 
   .sections li:first-child {
