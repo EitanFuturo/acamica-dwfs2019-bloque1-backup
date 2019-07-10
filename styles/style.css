@@ -38,7 +38,6 @@ nav {
 .menu {
   color: var(--text-color);  
   padding-right: 3px;
-  align-self: flex-end;
 }
 
 .menu::before {
@@ -124,12 +123,15 @@ h2.white.title {
 
 .sections {
   display: none;
-  text-align: center;
-  background-color: var(--secondary-color);
+  background-color: #0000EC;
+  color: var(--background-color);
   text-transform: uppercase;  
   font-family: var(--font-mono);  
-  font-size: 14px;
-  margin-top: 1rem;    
+  font-size: 1rem;
+  margin-top: 37.5px; 
+  margin-left: -66%;   
+  align-self: flex-start;
+  font-weight: 100;
 }
 
 #toggle {
@@ -137,17 +139,17 @@ h2.white.title {
 }
 
 .sections li {
-  padding: 1rem;
-  line-height: 1rem;
+  padding: 24px 3rem 0;
 }
 
-.sections li:nth-child(odd), .sections li:nth-child(2){
-  border-bottom: 1px solid var(--text-color);  
+.sections li:nth-last-child(1) {
+  padding-bottom: 24px;
 }
 
 #toggle:checked + .sections {
   display: block;
 }
+
 
 .newline-big-screen {
   display: block;
@@ -232,6 +234,10 @@ footer > h4 {
   justify-content: space-between;   
   width: 100%;
   padding-top: 1rem;
+}
+
+.blue {
+  color: #0000EC;
 }
 
 /* ----- MEDIA QUERIES ----- */
@@ -350,31 +356,31 @@ footer > h4 {
   .sections {
     /* El !important impide que quede en display:block con #toggle:checked en caso de cambiar de un tamaño de viewport a otro. */
     display: flex !important;
-    justify-content: space-between;    
+    color: var(--text-color);
+    margin: 0;
     font-family: var(--font-mono);
     font-weight: 100;
     text-transform: uppercase;
-    line-height: 1.75rem;
     background-color: var(--background-color);
   }
 
-  .sections > li {
+  .sections li {
     font-weight: 400;  
     border-bottom: none !important;
-    font-size: 100%
+    font-size: 100%;
+    padding: 0 1.5;
   }
 
   .sections li:first-child {
-    padding-right: 3rem;
+    padding-right: 1.5rem;
+    padding-left: 0; 
   }
 
   .sections li:last-child {
-    padding-left: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 0; 
   }
 
-  .sections li:nth-child(3) {
-    padding-left: 3rem;
-  }
 
   .suscribe {
     padding: 16px 3rem;
@@ -438,5 +444,9 @@ footer > h4 {
     justify-content: space-between;   
     width: 15%;
     padding-top: 1rem;
+  }
+
+  .expanded-menu {
+    width: 100%;
   }
 }

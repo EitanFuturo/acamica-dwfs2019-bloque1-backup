@@ -15,3 +15,4 @@
 13. Agregar el footer ¿Cómo poner los íconos de las redes sociales con Font Awesome? Resolver las distintas formas en que se alinean los elementos del footer según el tamaño del viewport. ¿Cómo resolver el espacio que queda abajo con el translateY?
 14. Ahora que tenemos todas las secciones, podemos agregar los anchors correspondientes apuntando con el atributo "href" a los ids de las secciones.
 15. Agregar el dropdown del menú hamburguesa en la versión mobile. ¿Cómo resolver que al hacer tap se despliegue el menú? ref: https://www.youtube.com/watch?v=xMTs8tAapnQ
+16. Agregar hovers.
