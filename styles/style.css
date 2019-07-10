@@ -3,7 +3,7 @@
 @import url('./variables.css');
 @import url('./media-queries.css');
 @import url('./svg.css');
-@import url('./player.css');
+@import url('./animations.css');
 
 :root {
   font-size: 16px; 
@@ -11,6 +11,14 @@
 
 body {
   height: calc(100vh - 150px);
+}
+
+.embeds iframe {
+  padding-top: 1.8rem;
+}
+
+.embeds iframe:nth-last-child(1) {
+  padding-bottom: calc(150px + 51px);
 }
 
 .logo {
@@ -71,7 +79,6 @@ nav {
 
 .polygon {
   background-image: var(--gradient);
-  height: 805px;
   clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);  
   -moz-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
   -o-clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% calc(100% - 3vh), 0 100%);
@@ -237,6 +244,21 @@ footer > h4 {
     padding: 22px 100px;
   }
 
+  .embeds iframe {
+    width: calc(50% - (3.5rem));
+    padding-right: 3.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .embeds iframe:nth-last-child(1) {
+    padding-bottom: calc(150px + 100px);
+  }
+  
+  .embeds {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .img-container.phone {
     width: 457.6px;
   }
@@ -275,7 +297,6 @@ footer > h4 {
   }
 
   .polygon {
-    height: 949px;
     clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
     -moz-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
     -o-clip-path: polygon(0 calc(0% + 15vh), 100% 0, 100% calc(100% - 15vh), 0 100%);
@@ -327,7 +348,8 @@ footer > h4 {
   }
 
   .sections {
-    display: flex;
+    /* El !important impide que quede en display:block con #toggle:checked en caso de cambiar de un tamaño de viewport a otro. */
+    display: flex !important;
     justify-content: space-between;    
     font-family: var(--font-mono);
     font-weight: 100;
