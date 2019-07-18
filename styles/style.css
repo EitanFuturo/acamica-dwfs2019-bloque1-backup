@@ -13,6 +13,16 @@ body {
   height: calc(100vh - 150px);
 }
 
+p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h3 {
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
 .embeds iframe {
   padding-top: 1.8rem;
 }
@@ -161,6 +171,8 @@ h2.white.title {
 
 .suscribe {
   font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 22px;
   padding: 13px 0;  
   text-transform: uppercase;
   text-align: center;
@@ -297,9 +309,13 @@ footer > h4 {
     padding-left: 12.50rem;
   }
 
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .main p {
     padding: 0 0 3.5rem 0;
-    font-size: 1rem;
   }
 
   .polygon {
@@ -381,16 +397,17 @@ footer > h4 {
     padding-right: 0; 
   }
 
-
   .suscribe {
     padding: 16px 3rem;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .origins {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   .text-container {
